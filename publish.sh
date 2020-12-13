@@ -8,7 +8,9 @@ git init
 git add -A
 git commit -m 'deploy'
 
-
+eval $(ssh-agent)
+ssh-add ~/.ssh/publish_rsa
+git remote add origin2 https://github.com/schoolnote/schoolnote.github.io.git
 
 git push -f git@second.github.com:schoolnote/schoolnote.github.io.git main
 cd –
