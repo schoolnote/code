@@ -1,0 +1,2 @@
+yarn docs:build
+
