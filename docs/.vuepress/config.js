@@ -4,12 +4,13 @@ module.exports = {
     ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]
   ],
   theme: 'reco',
+
   markdown: {
     lineNumbers: true
   },
 title: '跬步 | Step by step',
  themeConfig: {
-    base: '/study/', 
+    base: '/', 
     author: 'TarsChiu',
     smoothScroll: true,
     nav: [
