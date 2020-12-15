@@ -25,6 +25,7 @@ title: '跬步 | Step by step',
          children: [
         { title: "常用", path: "/Note/English/words/common" },
         { title: "生活", path: "/Note/English/words/life" },
+        { title: "英语作文", path: "/Note/English/standard.md" },
           ],
         },
         {
