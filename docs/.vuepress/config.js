@@ -1,10 +1,30 @@
 module.exports = {
+  plugins: [
+    ['@vuepress-yard/vuepress-plugin-window',
+    {
+    title: "致所有开发人员以及贡献者们",  //vuepress公告插件 先安装在配置 yarn add @vuepress-yard/vuepress-plugin-window
+    contentInfo: {
+      title: "~TarsChiu~",
+      //needImg: true,
+      //imgUrl: "https://reinness.com/avatar.png",
+      content: "目前，我们的网站仍然处于起步阶段，还有很多内容需要补充。在此，我希望大家能够积极向我们提供资料，一起将此网站建设的越来越好！",
+      contentStyle: ""
+    },
+    bottomInfo: {
+      btnText: '关于我',
+      linkTo: 'https://tarschiu.gitee.io/'
+    },
+    closeOnce: false
+    }
+    ]
+],
   dest: "./dist",
+  
   head: [
     ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]
   ],
   theme: 'reco',
-
+  
   markdown: {
     lineNumbers: true
   },
