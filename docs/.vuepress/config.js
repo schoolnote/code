@@ -16,7 +16,7 @@ module.exports = {
       btnText: '',
       linkTo: ''
       },
-    closeOnce: true//设置关闭后不再弹出，直到再次访问
+    closeOnce: true//设置关闭后不再弹出，直到再次访问！
     }
     ]
 ],
