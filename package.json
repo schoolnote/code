@@ -19,6 +19,7 @@
     "vuepress-plugin-gotop-plus": "^1.0.4"
   },
   "dependencies": {
+    "@vuepress-yard/vuepress-plugin-window": "^1.0.10",
     "vuepress-theme-reco": "^1.5.7"
   }
 }

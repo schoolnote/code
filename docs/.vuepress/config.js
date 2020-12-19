@@ -10,7 +10,7 @@ module.exports = {
       content: "目前，我们的网站仍然处于起步阶段，还有很多内容需要补充。在此，我希望大家能够积极向我们提供资料，一起将此网站建设的越来越好！",
       contentStyle: ""
     },
-    windowStyle:{right: '20px',top: '70px',width: '260px',},
+    //windowStyle:{right: '20px',top: '70px',width: '260px',},
       bottomInfo: 
       {
       btnText: '',
