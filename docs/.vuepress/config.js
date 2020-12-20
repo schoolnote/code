@@ -1,8 +1,9 @@
 module.exports = {
   plugins: [
+    //-----------------------vuepress公告插件 先安装在配置 yarn add @vuepress-yard/vuepress-plugin-window--------------------------//
     ['@vuepress-yard/vuepress-plugin-window',
     {
-    title: "致所有开发人员以及贡献者们",  //vuepress公告插件 先安装在配置 yarn add @vuepress-yard/vuepress-plugin-window
+    title: "致所有开发人员以及贡献者们", 
     contentInfo: {
       title: "~TarsChiu~",
       //needImg: true,
@@ -18,18 +19,29 @@ module.exports = {
       },
     closeOnce: true//设置关闭后不再弹出，直到再次访问！
     }
-    ]
+    ],
+
+     //支持数学公式https://vuepress.github.io/zh/plugins/mathjax/npm install -D vuepress-plugin-mathjax//
+      [
+          'vuepress-plugin-mathjax',
+          {}
+      ],
+
+   
 ],
   dest: "./dist",
   
   head: [
-    ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]
+    ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }],
+     // 数学公式
+   // ...
+ 
   ],
   theme: 'reco',
-  
   markdown: {
-    lineNumbers: true
-  },
+     lineNumbers: true,
+},
+ 
 title: '跬步 | Step by step',
  themeConfig: {
     base: '/', 
@@ -57,6 +69,14 @@ title: '跬步 | Step by step',
         { title: "乌有先生历险记", path: "/Note/Chinese/ancient" },
         { title: "乌有先生历险记-教材勾连", path: "/Note/Chinese/more" },
         { title: "生活", path: "/Note/Chinese/life" },
+          ],
+        },
+        {
+          title: "数学",
+          collapsable: true,
+         children: [
+        { title: "同构专题", path: "/Note/math/Tongg" },
+        { title: "占位", path: "/Note/math/w" },
           ],
         },
       ]
