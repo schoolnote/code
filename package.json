@@ -12,7 +12,7 @@
   },
   "keywords": [],
   "author": "TarsChiu <2059192947@qq.com>",
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.7.1",
     "vuepress": "^1.7.1",
@@ -21,6 +21,7 @@
   "dependencies": {
     "@vuepress-yard/vuepress-plugin-window": "^1.0.10",
     "vuepress-plugin-mathjax": "^1.2.8",
-    "vuepress-theme-reco": "^1.6.1"
+    "vuepress-theme-reco": "^1.6.1",
+    "yarn": "^1.22.10"
   }
 }
