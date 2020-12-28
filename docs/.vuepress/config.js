@@ -18,7 +18,7 @@ module.exports = {
       btnText: '主页',
       linkTo: 'https://schoolnote.github.io/'
       },
-    delayMount:500,
+    delayMount:1100,
     closeOnce: true//设置关闭后不再弹出，直到再次访问！
     }
     ],
