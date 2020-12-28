@@ -9,14 +9,16 @@ module.exports = {
       //needImg: true,
       //imgUrl: "https://reinness.com/avatar.png",
       content: "目前，我们的网站仍然处于起步阶段，还有很多内容需要补充。在此，我希望大家能够积极向我们提供资料，一起将此网站建设的越来越好！",
-      contentStyle: ""
+      //contentStyle: "" //自定义文字样式
     },
-    //windowStyle:{right: '20px',top: '70px',width: '260px',},
+     
+     windowStyle:{right: '20px',top: '70px',width: '270px', padding:'4px'},
       bottomInfo: 
       {
-      btnText: '',
-      linkTo: ''
+      btnText: '主页',
+      linkTo: 'https://schoolnote.github.io/'
       },
+    delayMount:500,
     closeOnce: true//设置关闭后不再弹出，直到再次访问！
     }
     ],
@@ -44,12 +46,14 @@ module.exports = {
  
 title: '跬步 | Step by step',
  themeConfig: {
+  subSidebar: 'auto',
     base: '/', 
     author: 'TarsChiu',
     smoothScroll: true,
     nav: [
       { text: '主页', link:'/'},
-      { text: '笔记', link:'/Note/English/words/common.md'},
+      { text: '笔记', link:'/guide/index.md'},
+      { text: '关于', link:'/article/letter.md'},
     ],
     sidebar: {
       "/Note/": [

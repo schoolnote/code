@@ -1,4 +1,6 @@
-# 欢迎来到我小破站
+---
+title: content | 目录
+---
 ## [English](/Note/English/words/common.md)
 ## [语文](/Note/Chinese/ancient.md)
 ## [数学](/Note/math/Tongg.md)
