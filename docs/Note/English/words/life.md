@@ -13,3 +13,10 @@
 消防栓，消火栓
 ## assessible
 易使用的，易接近的，易到达的，易得到的
+##  external
+外部的，外来的，外面的
+## saturated
+使充满，使大量吸收
+commm ## prep
+## injection
+注入，注射
