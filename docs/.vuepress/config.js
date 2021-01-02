@@ -49,7 +49,7 @@ title: '跬步 | Step by step',
   subSidebar: 'auto',
     base: '/', 
     author: 'TarsChiu',
-    smoothScroll: true,
+    //smoothScroll: true,
     nav: [
       { text: '主页', link:'/'},
       { text: '笔记', link:'/guide/index.md'},
