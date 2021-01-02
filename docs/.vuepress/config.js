@@ -1,5 +1,6 @@
 module.exports = {
   plugins: [
+         
     //-----------------------vuepress公告插件 先安装在配置 yarn add @vuepress-yard/vuepress-plugin-window--------------------------//
     ['@vuepress-yard/vuepress-plugin-window',
     {
