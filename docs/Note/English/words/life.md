@@ -20,3 +20,5 @@
 commm ## prep
 ## injection
 注入，注射
+## yarn
+纱线，奇谈，故事，讲故事，用纱线缠

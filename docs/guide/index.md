@@ -1,5 +1,5 @@
 ---
-title: Content | 目录
+title: Contents | 目录
 ---
 ## [English](/Note/English/words/common.md)
 ## [语文](/Note/Chinese/ancient.md)

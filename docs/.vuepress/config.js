@@ -48,6 +48,7 @@ module.exports = {
 title: '跬步 | Step by step',
  themeConfig: {
   subSidebar: 'auto',
+  type:'blog',
     base: '/', 
     author: 'TarsChiu',
     //smoothScroll: true,
