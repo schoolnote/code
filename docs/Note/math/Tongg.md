@@ -1,7 +1,7 @@
 ---
 title: 同构专题
 categories:
- - math
+ - 数学
 tags:
  - 函数
 author: 'Nie🎉'

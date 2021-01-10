@@ -1,9 +1,10 @@
 ---
-title: 英语作文评分标准
+title: English composition grading standards|英语作文评分标准
 categories:
  - English
 tags:
  - standard
+author: 'MissWang'
 ---
 | 评分档次                                              | 描 述                                                        |
 | ----------------------------------------------------- | ------------------------------------------------------------ |

@@ -1,9 +1,9 @@
 ---
 home: true
-title: 跬步
+title: 跬步|Step by step
 heroImage: /1.png
 heroText: 跬步 | Step by step
-tagline: My note website
+tagline: Our note website
 actionText: 进入
 actionLink: /guide/
 features:
