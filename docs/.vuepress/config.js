@@ -24,6 +24,28 @@ module.exports = {
     }
     ],
 
+
+
+
+    [
+      'vuepress-plugin-comment',
+      {
+        choosen: 'valine', 
+        // options选项中的所有参数，会传给Valine的配置
+        options: {
+          el: '#valine-vuepress-comment',
+          appId: 's23MzBdECSsl3Yzk2nMlOnUv-gzGzoHsz',
+          appKey: 'ARqD0TLmSCkEkhnD4OyJwF6t'
+          
+
+        }
+      }
+    ],
+
+
+
+
+
      //支持数学公式https://vuepress.github.io/zh/plugins/mathjax/npm install -D vuepress-plugin-mathjax//
       [
           'vuepress-plugin-mathjax',
@@ -47,8 +69,13 @@ module.exports = {
  
 title: '跬步 | Step by step',
  themeConfig: {
+  startYear: '2020',
   subSidebar: 'auto',
   type:'blog',
+  valineConfig: {
+    appId: 's23MzBdECSsl3Yzk2nMlOnUv-gzGzoHsz',// your appId
+    appKey: 'ARqD0TLmSCkEkhnD4OyJwF6t', // your appKey
+  },
     base: '/', 
     //author: 'TarsChiu',
     //smoothScroll: true,
