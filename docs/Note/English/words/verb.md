@@ -5,7 +5,7 @@ categories:
  - English
 tags:
  - Verb
- isShowComments: true
+isShowComments: true
 ---
 | 类型                                          | 汉语        | 原形       | 过去式     | 过去分词     |
 | --------------------------------------------- | ----------- | ---------- | ---------- | ------------ |
