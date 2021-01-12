@@ -80,6 +80,7 @@ title: '跬步 | Step by step',
   subSidebar: 'auto',
   type:'blog',
   valineConfig: {
+    showComment: false,
     appId: 's23MzBdECSsl3Yzk2nMlOnUv-gzGzoHsz',// your appId
     appKey: 'ARqD0TLmSCkEkhnD4OyJwF6t', // your appKey
   },
