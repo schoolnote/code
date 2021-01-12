@@ -27,20 +27,20 @@ module.exports = {
 
 
 
-    [
-      'vuepress-plugin-comment',
-      {
-        choosen: 'valine', 
+    //[
+      //'vuepress-plugin-comment',
+     // {
+      //  choosen: 'valine', 
         // options选项中的所有参数，会传给Valine的配置
-        options: {
-          el: '#valine-vuepress-comment',
-          appId: 's23MzBdECSsl3Yzk2nMlOnUv-gzGzoHsz',
-          appKey: 'ARqD0TLmSCkEkhnD4OyJwF6t'
+      //  options: {
+      //    el: '#valine-vuepress-comment',
+      //    appId: 's23MzBdECSsl3Yzk2nMlOnUv-gzGzoHsz',
+      //    appKey: 'ARqD0TLmSCkEkhnD4OyJwF6t'
           
 
-        }
-      }
-    ],
+       // }
+     // }
+   // ],
 
 
 

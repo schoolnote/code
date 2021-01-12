@@ -1,6 +1,6 @@
 ---
 title: 动词不规则动词 
-author: 'TarsChiu&MissWang'
+author: 'TarsChiu & Wendy'
 categories:
  - English
 tags:
