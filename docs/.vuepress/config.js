@@ -1,3 +1,16 @@
+//配置yarn任务
+/*
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "yarn",
+			"task": "docs:dev",
+			"problemMatcher": [],
+			"label": "yarn: docs:dev"
+		}
+	]
+}*/
 module.exports = {
   plugins: [
          
@@ -16,8 +29,8 @@ module.exports = {
      windowStyle:{right: '20px',top: '70px',width: '270px', padding:'4px'},
       bottomInfo: 
       {
-      btnText: '主页',
-      linkTo: 'https://schoolnote.github.io/'
+      btnText: '进入',
+      linkTo: '/guide/'
       },
     delayMount:1100,
     closeOnce: true//设置关闭后不再弹出，直到再次访问！
@@ -25,25 +38,19 @@ module.exports = {
     ],
 
 
-
-
-    [
-      'vuepress-plugin-comment',
-      {
-        choosen: 'valine', 
+    //[
+     // 'vuepress-plugin-comment',
+      //{
+      //  choosen: 'valine', 
         // options选项中的所有参数，会传给Valine的配置
-        options: {
-          el: '#valine-vuepress-comment',
-          appId: 's23MzBdECSsl3Yzk2nMlOnUv-gzGzoHsz',
-          appKey: 'ARqD0TLmSCkEkhnD4OyJwF6t'
+       // options: {
+       //   el: '#valine-vuepress-comment',
+       //   appId: 's23MzBdECSsl3Yzk2nMlOnUv-gzGzoHsz',
+///appKey: 'ARqD0TLmSCkEkhnD4OyJwF6t'
           
-
-        }
-      }
-    ],
-
-
-
+      //  }
+     // }
+   // ],
 
 
      //支持数学公式https://vuepress.github.io/zh/plugins/mathjax/npm install -D vuepress-plugin-mathjax//
