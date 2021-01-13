@@ -119,6 +119,17 @@ title: '跬步 | Step by step',
          children: [
         { title: "同构专题", path: "/Note/math/Tongg" },
         { title: "占位", path: "/Note/math/w" },
+        
+          ],
+        },
+
+        {
+          title: "地理",
+          collapsable: true,
+         children: [
+        { title: "三圈环流", path: "/Note/geography/1" },
+        { title: "占位", path: "/Note/geography/2" },
+        
           ],
         },
       ]
