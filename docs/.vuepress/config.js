@@ -1,16 +1,3 @@
-//配置yarn任务
-/*
-{
-	"version": "2.0.0",
-	"tasks": [
-		{
-			"type": "yarn",
-			"task": "docs:dev",
-			"problemMatcher": [],
-			"label": "yarn: docs:dev"
-		}
-	]
-}*/
 module.exports = {
   plugins: [
          
