@@ -5,7 +5,10 @@ categories:
 tags:
  - Words
 author: 'TarsChiu'
+isShowComments: true
+isTimeLine: false
 ---
+
 ## commit
 提交，承诺，做出保证，犯错误、罪行等，把....交托给
 ## predict

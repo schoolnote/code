@@ -1,6 +1,7 @@
 ---
 title: Words in Life ~
 author: 'TarsChiu'
+isShowComments: true
 ---
 ## Commit
 提交，承诺，做出保证，犯错误、罪行等，把....交托给

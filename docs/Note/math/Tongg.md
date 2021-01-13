@@ -5,6 +5,7 @@ categories:
 tags:
  - 函数
 author: 'Nie🎉'
+isShowComments: true
 ---
 ## 同构专题解析
 

@@ -1,3 +1,16 @@
+//配置yarn任务
+/*
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "yarn",
+			"task": "docs:dev",
+			"problemMatcher": [],
+			"label": "yarn: docs:dev"
+		}
+	]
+}*/
 module.exports = {
   plugins: [
          
@@ -16,8 +29,8 @@ module.exports = {
      windowStyle:{right: '20px',top: '70px',width: '270px', padding:'4px'},
       bottomInfo: 
       {
-      btnText: '主页',
-      linkTo: 'https://schoolnote.github.io/'
+      btnText: '进入',
+      linkTo: '/guide/'
       },
     delayMount:1100,
     closeOnce: true//设置关闭后不再弹出，直到再次访问！
@@ -72,7 +85,21 @@ title: '跬步 | Step by step',
   startYear: '2020',
   subSidebar: 'auto',
   type:'blog',
+  /*
+  blogConfig: {
+    category: {
+      //location: 2,     // 在导航栏菜单中所占的位置，默认2
+      text: 'Category' // 默认文案 “分类”
+    },
+    tag: {
+     // location: 3,     // 在导航栏菜单中所占的位置，默认3
+      text: 'Tag'      // 默认文案 “标签”
+    },
+  },
+*/
+  
   valineConfig: {
+    showComment: false,
     appId: 's23MzBdECSsl3Yzk2nMlOnUv-gzGzoHsz',// your appId
     appKey: 'ARqD0TLmSCkEkhnD4OyJwF6t', // your appKey
   },

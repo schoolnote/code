@@ -16,12 +16,10 @@
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.7.1",
     "vuepress": "^1.7.1",
-    "vuepress-plugin-comment": "^0.7.3",
     "vuepress-plugin-gotop-plus": "^1.0.4"
   },
   "dependencies": {
     "@vuepress-yard/vuepress-plugin-window": "^1.0.10",
-    "leancloud-storage": "^4.9.0",
     "valine": "^1.4.14",
     "vuepress-plugin-mathjax": "^1.2.8",
     "vuepress-theme-reco": "^1.6.1",
