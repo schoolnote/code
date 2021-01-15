@@ -1,4 +1,9 @@
 module.exports = {
+  locales: {
+    '/': {
+      lang: 'zh-CN'
+    }
+  },
   plugins: [
          
     //-----------------------vuepress公告插件 先安装在配置 yarn add @vuepress-yard/vuepress-plugin-window--------------------------//
@@ -46,7 +51,7 @@ module.exports = {
           {}
       ],
 
-   
+     ,   
 ],
   dest: "./dist",
   
@@ -57,15 +62,17 @@ module.exports = {
  
   ],
   theme: 'reco',
-  markdown: {
-     lineNumbers: true,
-},
+  //markdown: {
+ //    lineNumbers: true,
+//},
  
 title: '跬步 | Step by step',
  themeConfig: {
   startYear: '2020',
   subSidebar: 'auto',
   type:'blog',
+
+  
   /*
   blogConfig: {
     category: {
@@ -127,8 +134,8 @@ title: '跬步 | Step by step',
           title: "地理",
           collapsable: true,
          children: [
-        { title: "三圈环流", path: "/Note/geography/1" },
-        { title: "占位", path: "/Note/geography/2" },
+        { title: "三圈环流", path: "/Note/geography/3q" },
+        { title: "地理素养", path: "/Note/geography/data" },
         
           ],
         },
