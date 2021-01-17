@@ -1190,6 +1190,11 @@
   resolved "https://registry.npm.taobao.org/@vuepress-reco/vuepress-plugin-back-to-top/download/@vuepress-reco/vuepress-plugin-back-to-top-1.6.0.tgz#16cf1a6844f156c11d5135c646270c6734263eb6"
   integrity sha1-Fs8aaETxVsEdUTXGRicMZzQmPrY=
 
+"@vuepress-reco/vuepress-plugin-bgm-player@^1.1.3":
+  version "1.1.3"
+  resolved "https://registry.npm.taobao.org/@vuepress-reco/vuepress-plugin-bgm-player/download/@vuepress-reco/vuepress-plugin-bgm-player-1.1.3.tgz#47e1142908dfc7341c6507a8f1b71f14a357ab3e"
+  integrity sha1-R+EUKQjfxzQcZQeo8bcfFKNXqz4=
+
 "@vuepress-reco/vuepress-plugin-comments@^1.6.0":
   version "1.6.0"
   resolved "https://registry.npm.taobao.org/@vuepress-reco/vuepress-plugin-comments/download/@vuepress-reco/vuepress-plugin-comments-1.6.0.tgz#df9fb43ce032d429b4c6defcaef461420593f69f"
@@ -8414,7 +8419,7 @@ vuepress-theme-reco@^1.6.1:
     vue-click-outside "1.1.0"
     vuepress-plugin-smooth-scroll "^0.0.9"
 
-vuepress@^1.7.1:
+vuepress@^1.8.0:
   version "1.8.0"
   resolved "https://registry.npm.taobao.org/vuepress/download/vuepress-1.8.0.tgz#0139d466b33fbfdb628abb76d555368b85cf9772"
   integrity sha1-ATnUZrM/v9tiirt21VU2i4XPl3I=

@@ -1,5 +1,6 @@
 ---
 home: true
+lang: zh-CN
 title: 跬步|Step by step
 heroImage: /1.png
 heroText: 跬步 | Step by step
