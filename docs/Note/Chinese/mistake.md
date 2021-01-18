@@ -4,7 +4,7 @@ categories:
  - 语文
 tags:
  - 语文差错
-author: '艳子'
+author: '兰花'
 isShowComments: true
 ---
 
