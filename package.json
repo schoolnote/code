@@ -17,7 +17,8 @@
     "@vuepress-reco/vuepress-plugin-bgm-player": "^1.1.3",
     "@vuepress/plugin-back-to-top": "^1.7.1",
     "vuepress": "^1.8.0",
-    "vuepress-plugin-gotop-plus": "^1.0.4"
+    "vuepress-plugin-gotop-plus": "^1.0.4",
+    "vuepress-plugin-meting": "^0.1.1"
   },
   "dependencies": {
     "@vuepress-yard/vuepress-plugin-window": "^1.0.10",

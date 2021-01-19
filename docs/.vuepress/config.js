@@ -6,25 +6,19 @@ module.exports = {
     }
   },
   plugins: [
-    ["@vuepress-reco/vuepress-plugin-bgm-player",
-    {
-      audios: [
-        // 网络文件示例
-        {
-          name: 'All Falls Down',
-          artist: 'Alan Walker / Noah Cyrus / Digital Farm Animals / Juliander',
-          url: 'http://m10.music.126.net/20210117181154/502a0b3d3657c19750751d4a1f9f267d/ymusic/f1e5/a197/ce6e/692033fa5dd2a31bc548340e732ab775.mp3',
-          cover: 'http://p1.music.126.net/rTb28CZeLWxIRuSlJWkPLQ==/18850027346628137.jpg?param=130y130'
+    [
+      'meting', {
+        metingApi: "https://meting.sigure.xyz/api/music",
+        meting: {
+          server: "netease",
+          type: "playlist",
+          mid: "2268910370",
+        },          // 不配置该项的话不会出现全局播放器
+        aplayer: {
+          lrcType: 3
         }
-      ] ,
-      // 自动缩小
-      autoShrink:true ,
-      // 悬浮窗模式，吸边
-      shrinkMode: 'float' ,
-      // 悬浮窗位置
-      floatStyle:{ bottom: '10px', 'z-index': '999999' },
-
-    }],
+      }
+    ],
     //-----------------------vuepress公告插件 先安装在配置 yarn add @vuepress-yard/vuepress-plugin-window--------------------------//
     ['@vuepress-yard/vuepress-plugin-window',
     {
