@@ -6,7 +6,6 @@ module.exports = {
     }
   },
   plugins: [
-    ["vuepress-plugin-boxx"]
     [
       'meting', {
         //metingApi: "https://meting.sigure.xyz/api/music",
