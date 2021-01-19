@@ -1197,11 +1197,6 @@
   resolved "https://registry.npm.taobao.org/@vuepress-reco/vuepress-plugin-back-to-top/download/@vuepress-reco/vuepress-plugin-back-to-top-1.6.0.tgz#16cf1a6844f156c11d5135c646270c6734263eb6"
   integrity sha1-Fs8aaETxVsEdUTXGRicMZzQmPrY=
 
-"@vuepress-reco/vuepress-plugin-bgm-player@^1.1.3":
-  version "1.1.3"
-  resolved "https://registry.npm.taobao.org/@vuepress-reco/vuepress-plugin-bgm-player/download/@vuepress-reco/vuepress-plugin-bgm-player-1.1.3.tgz#47e1142908dfc7341c6507a8f1b71f14a357ab3e"
-  integrity sha1-R+EUKQjfxzQcZQeo8bcfFKNXqz4=
-
 "@vuepress-reco/vuepress-plugin-comments@^1.6.0":
   version "1.6.0"
   resolved "https://registry.npm.taobao.org/@vuepress-reco/vuepress-plugin-comments/download/@vuepress-reco/vuepress-plugin-comments-1.6.0.tgz#df9fb43ce032d429b4c6defcaef461420593f69f"
@@ -8333,6 +8328,11 @@ vuepress-mergeable@^1.0.2:
   integrity sha1-c4u+RhAaB+JWuD2/ghQNF74CDAU=
   dependencies:
     deconstruct-merge "^1.1.0"
+
+vuepress-plugin-boxx@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.npm.taobao.org/vuepress-plugin-boxx/download/vuepress-plugin-boxx-0.0.7.tgz#8337d27eaf5b3f609eb7befdb3681ce5f0eac17c"
+  integrity sha1-gzfSfq9bP2Cet779s2gc5fDqwXw=
 
 vuepress-plugin-container@^2.0.2:
   version "2.1.5"

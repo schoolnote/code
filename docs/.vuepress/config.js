@@ -6,17 +6,20 @@ module.exports = {
     }
   },
   plugins: [
+    ["vuepress-plugin-boxx"]
     [
       'meting', {
-        metingApi: "https://meting.sigure.xyz/api/music",
+        //metingApi: "https://meting.sigure.xyz/api/music",
         meting: {
-          server: "netease",
-          type: "playlist",
-          mid: "2268910370",
+          auto: "https://music.163.com/#/song?id=17706516"
         },          // 不配置该项的话不会出现全局播放器
         aplayer: {
           lrcType: 3
-        }
+        },
+        mobile :{
+          cover: false,
+          lrc: false,
+      },
       }
     ],
     //-----------------------vuepress公告插件 先安装在配置 yarn add @vuepress-yard/vuepress-plugin-window--------------------------//
