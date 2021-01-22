@@ -7,11 +7,11 @@ tags:
 author: '兰花'
 isShowComments: true
 ---
-![](/img/zh/1.svg)
-![](/img/zh/2.svg)
-![](/img/zh/3.svg)
-![](/img/zh/4.svg)
-![](/img/zh/5.svg)
-![](/img/zh/6.svg)
-![](/img/zh/7.svg)
-![](/img/zh/8.svg)
+![](/img/zh/zh1.svg)
+![](/img/zh/zh2.svg)
+![](/img/zh/zh3.svg)
+![](/img/zh/zh4.svg)
+![](/img/zh/zh5.svg)
+![](/img/zh/zh6.svg)
+![](/img/zh/zh7.svg)
+![](/img/zh/zh8.svg)
