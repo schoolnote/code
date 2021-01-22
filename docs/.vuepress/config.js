@@ -1,10 +1,11 @@
 module.exports = {
   head: [
-    // add jquert and fanc
+    //alt="mixureSecure
+    // add jquert and fancybox
     ['script', { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js' }],
     ['script', { src: 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.js' }],
     ['link', { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.css' }]
-   ],
+],
   locales: {
     '/': {
       lang: 'zh-CN'
@@ -37,7 +38,7 @@ module.exports = {
       content: "目前，我们的网站仍然处于起步阶段，还有很多内容需要补充。在此，我希望大家能够积极向我们提供资料，一起将此网站建设的越来越好！",
       //contentStyle: "" //自定义文字样式
     },
-     
+  
      windowStyle:{right: '20px',top: '70px',width: '270px', padding:'4px'},
       bottomInfo: 
       {
