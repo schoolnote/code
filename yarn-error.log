@@ -1,5 +1,5 @@
 Arguments: 
-  D:\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add vuepress-plugin-meting -D
+  D:\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add @vuepress/medium-zoom
 
 PATH: 
   D:\software\VMware\bin\;C:\windows\System32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;D:\software\Java\bin;D:\software\Java\jre\bin;D:\python;D:\sqlmap;C:\windows\system32;C:\windows\System32\OpenSSH\;D:\python\Scripts;D:\nodejs\;D:\software\Git\cmd;D:\software\Git\bin;C:\Users\Admin\AppData\Local\Microsoft\WindowsApps;D:\software\bandizip\;D:\software\Microsoft VS Code\Microsoft VS Code\bin;D:\software\Java\bin;D:\software\Java\jre\bin;C:\Users\Admin\AppData\Roaming\npm;
@@ -14,8 +14,17 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: connect ETIMEDOUT 222.85.26.234:443
-      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1145:16)
+  Error: https://registry.npm.taobao.org/@vuepress%2fmedium-zoom: Not found
+      at Request.params.callback [as _callback] (C:\Users\Admin\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66988:18)
+      at Request.self.callback (C:\Users\Admin\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140662:22)
+      at Request.emit (events.js:314:20)
+      at Request.<anonymous> (C:\Users\Admin\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141634:10)
+      at Request.emit (events.js:314:20)
+      at IncomingMessage.<anonymous> (C:\Users\Admin\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141556:12)
+      at Object.onceWrapper (events.js:420:28)
+      at IncomingMessage.emit (events.js:326:22)
+      at endReadableNT (_stream_readable.js:1252:12)
+      at processTicksAndRejections (internal/process/task_queues.js:80:21)
 
 npm manifest: 
   {
@@ -34,14 +43,16 @@ npm manifest:
     "author": "TarsChiu <2059192947@qq.com>",
     "license": "ISC",
     "devDependencies": {
-      "@vuepress-reco/vuepress-plugin-bgm-player": "^1.1.3",
       "@vuepress/plugin-back-to-top": "^1.7.1",
       "vuepress": "^1.8.0",
-      "vuepress-plugin-gotop-plus": "^1.0.4"
+      "vuepress-plugin-gotop-plus": "^1.0.4",
+      "vuepress-plugin-meting": "^0.1.1"
     },
     "dependencies": {
       "@vuepress-yard/vuepress-plugin-window": "^1.0.10",
+      "@vuepress/plugin-medium-zoom": "^1.8.0",
       "valine": "^1.4.14",
+      "vuepress-plugin-boxx": "^0.0.7",
       "vuepress-plugin-mathjax": "^1.2.8",
       "vuepress-theme-reco": "^1.6.1",
       "yarn": "^1.22.10"
@@ -957,6 +968,13 @@ Lockfile:
       event-target-shim "^5.0.1"
       miniprogram-api-typings "^2.10.2"
   
+  "@moefe/vue-aplayer@^2.0.0-beta.5":
+    version "2.0.0-beta.5"
+    resolved "https://registry.npm.taobao.org/@moefe/vue-aplayer/download/@moefe/vue-aplayer-2.0.0-beta.5.tgz#f6bbd1802562e8e30ef9106192008a90bed2a354"
+    integrity sha1-9rvRgCVi6OMO+RBhkgCKkL7So1Q=
+    dependencies:
+      vue "^2.5.17"
+  
   "@mrmlnc/readdir-enhanced@^2.2.1":
     version "2.2.1"
     resolved "https://registry.npm.taobao.org/@mrmlnc/readdir-enhanced/download/@mrmlnc/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
@@ -1244,11 +1262,6 @@ Lockfile:
     resolved "https://registry.npm.taobao.org/@vuepress-reco/vuepress-plugin-back-to-top/download/@vuepress-reco/vuepress-plugin-back-to-top-1.6.0.tgz#16cf1a6844f156c11d5135c646270c6734263eb6"
     integrity sha1-Fs8aaETxVsEdUTXGRicMZzQmPrY=
   
-  "@vuepress-reco/vuepress-plugin-bgm-player@^1.1.3":
-    version "1.1.3"
-    resolved "https://registry.npm.taobao.org/@vuepress-reco/vuepress-plugin-bgm-player/download/@vuepress-reco/vuepress-plugin-bgm-player-1.1.3.tgz#47e1142908dfc7341c6507a8f1b71f14a357ab3e"
-    integrity sha1-R+EUKQjfxzQcZQeo8bcfFKNXqz4=
-  
   "@vuepress-reco/vuepress-plugin-comments@^1.6.0":
     version "1.6.0"
     resolved "https://registry.npm.taobao.org/@vuepress-reco/vuepress-plugin-comments/download/@vuepress-reco/vuepress-plugin-comments-1.6.0.tgz#df9fb43ce032d429b4c6defcaef461420593f69f"
@@ -1382,6 +1395,13 @@ Lockfile:
     version "1.5.0"
     resolved "https://registry.npm.taobao.org/@vuepress/plugin-medium-zoom/download/@vuepress/plugin-medium-zoom-1.5.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40vuepress%2Fplugin-medium-zoom%2Fdownload%2F%40vuepress%2Fplugin-medium-zoom-1.5.0.tgz#99a574f6c52570ae16be3de529bdc556d09f88fe"
     integrity sha1-maV09sUlcK4Wvj3lKb3FVtCfiP4=
+    dependencies:
+      medium-zoom "^1.0.4"
+  
+  "@vuepress/plugin-medium-zoom@^1.8.0":
+    version "1.8.0"
+    resolved "https://registry.npm.taobao.org/@vuepress/plugin-medium-zoom/download/@vuepress/plugin-medium-zoom-1.8.0.tgz#e7bff4dd0af58929c16d3feaa8f47dfa6cedac34"
+    integrity sha1-57/03Qr1iSnBbT/qqPR9+mztrDQ=
     dependencies:
       medium-zoom "^1.0.4"
   
@@ -8351,7 +8371,7 @@ Lockfile:
     resolved "https://registry.npm.taobao.org/vue-template-es2015-compiler/download/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
     integrity sha1-HuO8mhbsv1EYvjNLsV+cRvgvWCU=
   
-  vue@^2.6.10, vue@^2.6.12:
+  vue@^2.5.17, vue@^2.6.10, vue@^2.6.12:
     version "2.6.12"
     resolved "https://registry.npm.taobao.org/vue/download/vue-2.6.12.tgz?cache=0&sync_timestamp=1609359872993&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvue%2Fdownload%2Fvue-2.6.12.tgz#f5ebd4fa6bd2869403e29a896aed4904456c9123"
     integrity sha1-9evU+mvShpQD4pqJau1JBEVskSM=
@@ -8380,6 +8400,11 @@ Lockfile:
     integrity sha1-c4u+RhAaB+JWuD2/ghQNF74CDAU=
     dependencies:
       deconstruct-merge "^1.1.0"
+  
+  vuepress-plugin-boxx@^0.0.7:
+    version "0.0.7"
+    resolved "https://registry.npm.taobao.org/vuepress-plugin-boxx/download/vuepress-plugin-boxx-0.0.7.tgz#8337d27eaf5b3f609eb7befdb3681ce5f0eac17c"
+    integrity sha1-gzfSfq9bP2Cet779s2gc5fDqwXw=
   
   vuepress-plugin-container@^2.0.2:
     version "2.1.5"
@@ -8433,6 +8458,13 @@ Lockfile:
       lru-cache "^5.1.1"
       mathjax3 "3.0.0-beta.3"
       vuepress-mergeable "^1.0.2"
+  
+  vuepress-plugin-meting@^0.1.1:
+    version "0.1.1"
+    resolved "https://registry.npm.taobao.org/vuepress-plugin-meting/download/vuepress-plugin-meting-0.1.1.tgz#1a407ef9ed0f9c5f19bf2ad5edc6bc56ad7f59d0"
+    integrity sha1-GkB++e0PnF8ZvyrV7ca8Vq1/WdA=
+    dependencies:
+      "@moefe/vue-aplayer" "^2.0.0-beta.5"
   
   vuepress-plugin-sitemap@^2.3.1:
     version "2.3.1"
