@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@vuepress-yard/vuepress-plugin-window": "^1.0.10",
-    "fancybox": "^3.0.1",
+    "medium-zoom": "^1.0.6",
     "valine": "^1.4.14",
     "vuepress-plugin-mathjax": "^1.2.8",
     "vuepress-theme-reco": "^1.6.1",
