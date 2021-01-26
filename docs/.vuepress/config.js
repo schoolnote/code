@@ -41,11 +41,13 @@ module.exports = {
     base: '/',
     nav: [
       { text: '主页', link: '/' },
-      { text: '笔记', link: '/guide/index.md' },
-      { text: '关于', link: '/article/letter.md' },
+      { text: '目录', link: '/Note/index.md' },
+      { text: '关于', link: '/Note/about.md' },
     ],
+
     sidebar: {
       "/Note/": [
+        //===========//
         {
           title: "英语",
           collapsable: true,
@@ -56,6 +58,7 @@ module.exports = {
             { title: "英语作文", path: "/Note/English/standard.md" },
           ],
         },
+        //===========//
         {
           title: "语文",
           collapsable: true,
@@ -64,8 +67,10 @@ module.exports = {
             { title: "乌有先生历险记-教材勾连", path: "/Note/Chinese/more" },
             { title: "生活", path: "/Note/Chinese/life" },
             { title: "思维导图", path: "/Note/Chinese/mindmap" },
+            { title: "语文差错", path: "/Note/Chinese/mistake" },
           ],
         },
+        //===========//
         {
           title: "数学",
           collapsable: true,
@@ -75,6 +80,7 @@ module.exports = {
 
           ],
         },
+        //===========//
         {
           title: "地理",
           collapsable: true,
@@ -82,14 +88,6 @@ module.exports = {
             { title: "三圈环流", path: "/Note/geography/3q" },
             { title: "地理素养", path: "/Note/geography/data" },
 
-          ],
-        },
-        {
-          title: "关于",
-          collapsable: true,
-          children: [
-            { title: "目录", path: "/Note/index.md" },
-            { title: "关于本站", path: "/Note/about.md" },
           ],
         },
       ],

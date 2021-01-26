@@ -38,11 +38,11 @@ ps：单词模块是由我负责哦~ </br>
 我是TarsChiu~</br>
 
 ## 它是怎样运作的？
-我们主要通过邮箱来接收您的文件与文章，同时你也可以加入我的QQ群与微信群，将文件发送给我们。不过，我们还是建议您以邮件的方式发送
-这样我们可以随时看见您的邮件，以便更新内容。
+我们主要通过邮箱来接收您的文件与文章，同时你也可以加入我的QQ群与微信群，将文件发送给我们。不过，我们还是建议您以邮件的方式发送。
+这样,我们可以随时看见您的邮件，以便更新内容。
 
 ## 我应该怎样参与？
-如果您愿意加入我们，我们十分的高兴，您的加入可以使网站更加丰富，为我们的团队带来新的活力
+如果您愿意加入我们，我们十分高兴.您的加入可以使网站内容更加丰富，并为我们的团队带来新的活力!
 
 ### 联系方式
 我们有以下联系方式：
@@ -191,4 +191,27 @@ isShowComments: true   //是否显示评论区， true=是 false=否
 <p align="right"><b>TarsChiu,</b></p>
 <p align="right"><b>night</b></p>
 
+:::
+
+</br>
+</br>
+</br>
+</br>
+
+::: details 开发者指南：
+## 本文只针对已经熟悉vuepress的开发者
+>网站服务器托管: Github & Gitee(主要用于国内加速访问)</br>
+引擎:vuepress(基于vue)</br>
+主题:vuepress-theme-reco</br>
+插件:</br>
+"vuepress-plugin-meting"</br>
+"vuepress-plugin-mathjax"</br>
+"valine"(用于浏览量及评论)</br>
+使用yarn作为包管理器</br>
+
+源代码是同步到github上的:</br>
+地址:[https://github.com/schoolnote/code](https://github.com/schoolnote/code)</br>
+ssh:[git@github.com:schoolnote/code.git]()</br>
+你可以创建分支,直接在github上为我们提供文章。这样,我们只要拉取就可以了,真开心😁!</br>
+开发环境: vscode(yarn + Yarn Task Provider 插件) + Windows10 + git</br>
 :::
