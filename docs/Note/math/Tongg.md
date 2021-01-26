@@ -3,7 +3,7 @@ title: 同构专题
 categories:
  - 数学
 tags:
- - 函数
+ - 题目解析
 author: 'Nie🎉'
 isShowComments: true
 ---

@@ -76,7 +76,7 @@ module.exports = {
           collapsable: true,
           children: [
             { title: "同构专题", path: "/Note/math/Tongg" },
-            { title: "占位", path: "/Note/math/w" },
+            { title: "八省联考数学试卷解析", path: "/Note/math/8s" },
 
           ],
         },
@@ -87,6 +87,7 @@ module.exports = {
           children: [
             { title: "三圈环流", path: "/Note/geography/3q" },
             { title: "地理素养", path: "/Note/geography/data" },
+            { title: "冰海啸", path: "/Note/geography/ice" },
 
           ],
         },

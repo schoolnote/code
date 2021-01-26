@@ -4,7 +4,7 @@ author: 'TarsChiu & Wendy'
 categories:
  - English
 tags:
- - Verb
+ - Words
 isShowComments: true
 ---
 | 类型                                          | 汉语        | 原形       | 过去式     | 过去分词     |
