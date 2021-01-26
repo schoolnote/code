@@ -23,6 +23,7 @@ categories:
 
 加油！
 :::
+[如何使用本站](/Note/how.md)
 
 ## 这是个什么网站？
 这一个学习互动性网站，通过线上线下的交流与互动，让内容呈现在老师与学生面前，让人人都有机会参与我们网站的建设。
@@ -172,7 +173,7 @@ isShowComments: true   //是否显示评论区， true=是 false=否
 
 显示效果如下：
 
-![示例](/img/1.png)
+![sXNgHO.png](https://s3.ax1x.com/2021/01/26/sXNgHO.png)
 
 </br>
 

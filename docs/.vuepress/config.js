@@ -63,6 +63,7 @@ module.exports = {
             { title: "乌有先生历险记", path: "/Note/Chinese/ancient" },
             { title: "乌有先生历险记-教材勾连", path: "/Note/Chinese/more" },
             { title: "生活", path: "/Note/Chinese/life" },
+            { title: "思维导图", path: "/Note/Chinese/mindmap" },
           ],
         },
         {
@@ -87,6 +88,7 @@ module.exports = {
           title: "关于",
           collapsable: true,
           children: [
+            { title: "目录", path: "/Note/index.md" },
             { title: "关于本站", path: "/Note/about.md" },
           ],
         },
