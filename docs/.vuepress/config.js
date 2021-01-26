@@ -1,5 +1,4 @@
 module.exports = {
-  //alt="mixureSecure
   locales: {
     '/': {
       lang: 'zh-CN'
@@ -8,7 +7,6 @@ module.exports = {
   plugins: [
     [
       'meting', {
-        //metingApi: "https://meting.sigure.xyz/api/music",
         meting: {
           auto: "https://music.163.com/#/song?id=17706516"
         },          // 不配置该项的话不会出现全局播放器
@@ -21,88 +19,26 @@ module.exports = {
         },
       }
     ],
-    //-----------------------vuepress公告插件 先安装在配置 yarn add @vuepress-yard/vuepress-plugin-window-----------------------//
-    ['@vuepress-yard/vuepress-plugin-window',
-      {
-        title: "致所有开发人员以及贡献者们",
-        contentInfo: {
-          title: "~TarsChiu~",
-          //needImg: true,
-          //imgUrl: "https://reinness.com/avatar.png",
-          content: "目前，我们的网站仍然处于起步阶段，还有很多内容需要补充。在此，我希望大家能够积极向我们提供资料，一起将此网站建设的越来越好！",
-          //contentStyle: "" //自定义文字样式
-        },
-
-        windowStyle: { right: '20px', top: '70px', width: '270px', padding: '4px' },
-        bottomInfo:
-        {
-          btnText: '进入',
-          linkTo: '/'
-        },
-        delayMount: 1100,
-        closeOnce: true//设置关闭后不再弹出，直到再次访问！
-      }
-    ],
-
-
-    /*[
-    'vuepress-plugin-comment',
-    {
-    choosen: 'valine', 
-    options选项中的所有参数，会传给Valine的配置
-    options: {
-    el: '#valine-vuepress-comment',
-    appId: 's23MzBdECSsl3Yzk2nMlOnUv-gzGzoHsz',
-    appKey: 'ARqD0TLmSCkEkhnD4OyJwF6t'     
-    }
-    }
-    ],*/
-
-    //支持数学公式https://vuepress.github.io/zh/plugins/mathjax/npm install -D vuepress-plugin-mathjax//
+    //支持数学公式//
     ['vuepress-plugin-mathjax'],
-    ["@vuepress/medium-zoom"],
-
   ],
   dest: "./dist",
-
-  head: [
-    //['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }],
-
-  ],
   theme: 'reco',
   markdown: {
     lineNumbers: true,
   },
-
   title: '跬步 | Step by step',
   themeConfig: {
     lastUpdate: false,
     startYear: '2020',
     subSidebar: 'auto',
     type: 'blog',
-
-
-    /*
-    blogConfig: {
-      category: {
-        //location: 2,     // 在导航栏菜单中所占的位置，默认2
-        text: 'Category' // 默认文案 “分类”
-      },
-      tag: {
-       // location: 3,     // 在导航栏菜单中所占的位置，默认3
-        text: 'Tag'      // 默认文案 “标签”
-      },
-    },
-  */
-
     valineConfig: {
       showComment: false,
-      appId: 's23MzBdECSsl3Yzk2nMlOnUv-gzGzoHsz',// your appId
-      appKey: 'ARqD0TLmSCkEkhnD4OyJwF6t', // your appKey
+      appId: 's23MzBdECSsl3Yzk2nMlOnUv-gzGzoHsz',
+      appKey: 'ARqD0TLmSCkEkhnD4OyJwF6t',
     },
     base: '/',
-    //author: 'TarsChiu',
-    //smoothScroll: true,
     nav: [
       { text: '主页', link: '/' },
       { text: '笔记', link: '/guide/index.md' },
@@ -155,9 +91,6 @@ module.exports = {
           ],
         },
       ],
-      
-
-
     },
     sidebarDepth: 3,
   },

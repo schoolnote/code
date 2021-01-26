@@ -1,0 +1,66 @@
+https://vuepress.github.io/zh/plugins/mathjax/npm install -D vuepress-plugin-mathjax
+
+    //['@vuepress/medium-zoom'],
+
+         //author: 'TarsChiu',
+    //smoothScroll: true,
+
+ 
+  /*
+    blogConfig: {
+      category: {
+        //location: 2,     // 在导航栏菜单中所占的位置，默认2
+        text: 'Category' // 默认文案 “分类”
+      },
+      tag: {
+       // location: 3,     // 在导航栏菜单中所占的位置，默认3
+        text: 'Tag'      // 默认文案 “标签”
+      },
+    },
+  */
+
+ head: [
+    //['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }],
+
+  ],
+
+ //metingApi: "https://meting.sigure.xyz/api/music",
+
+
+//-----------------------vuepress公告插件 先安装在配置 yarn add @vuepress-yard/vuepress-plugin-window-----------------------//
+    /*
+    ['@vuepress-yard/vuepress-plugin-window'
+      {
+        title: "致所有开发人员以及贡献者们",
+        contentInfo: {
+          title: "~TarsChiu~",
+          //needImg: true,
+          //imgUrl: "https://reinness.com/avatar.png",
+          content: "目前，我们的网站仍然处于起步阶段，还有很多内容需要补充。在此，我希望大家能够积极向我们提供资料，一起将此网站建设的越来越好！",
+          //contentStyle: "" //自定义文字样式
+        },
+
+        windowStyle: { right: '20px', top: '70px', width: '270px', padding: '4px' },
+        bottomInfo:
+        {
+          btnText: '进入',
+          linkTo: '/'
+        },
+        delayMount: 1100,
+        closeOnce: true//设置关闭后不再弹出，直到再次访问！
+      }
+    ],
+    */
+
+    /*[
+    'vuepress-plugin-comment',
+    {
+    choosen: 'valine', 
+    options选项中的所有参数，会传给Valine的配置
+    options: {
+    el: '#valine-vuepress-comment',
+    appId: 's23MzBdECSsl3Yzk2nMlOnUv-gzGzoHsz',
+    appKey: 'ARqD0TLmSCkEkhnD4OyJwF6t'     
+    }
+    }
+    ],*/

@@ -1,6 +1,6 @@
 {
   "name": "study",
-  "version": "1.0.0",
+  "version": "1.7.0",
   "description": "",
   "main": "index.js",
   "directories": {
@@ -11,18 +11,17 @@
     "docs:build": "vuepress build docs"
   },
   "keywords": [],
-  "author": "TarsChiu <2059192947@qq.com>",
-  "license": "ISC",
+  "author": "TarsChiu",
+  "license": "MIT",
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.7.1",
-    "vuepress": "^1.8.0",
     "vuepress-plugin-gotop-plus": "^1.0.4",
     "vuepress-plugin-meting": "^0.1.1"
   },
   "dependencies": {
     "@vuepress-yard/vuepress-plugin-window": "^1.0.10",
-    "medium-zoom": "^1.0.6",
     "valine": "^1.4.14",
+    "vuepress": "^1.8.0",
     "vuepress-plugin-mathjax": "^1.2.8",
     "vuepress-theme-reco": "^1.6.1",
     "yarn": "^1.22.10"
