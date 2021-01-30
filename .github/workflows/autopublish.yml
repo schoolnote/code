@@ -22,5 +22,5 @@ jobs:
         run: |
           yarn config set registry https://r.npm.taobao.org
           yarn
-          yarn build
+          yarn docs:build
           
