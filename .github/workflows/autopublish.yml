@@ -10,28 +10,28 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: 1、Check
         uses: actions/checkout@v2.3.4
         with:
           persist-credentials: false
           fetch-depth: 0
-      - name: Setup Node.js environment
+      - name: 2、Setup environment
         uses: actions/setup-node@v2.1.4
         with:
           node-version: 15.x
-      - name: build and deploy
+      - name: 3、building...(please wait) 
         env:
           ACTION_DEPLOY_KEY: ${{ secrets.PUBLISH }}
         run: |
-          yarn config set registry https://r.npm.taobao.org
+          #yarn config set registry https://r.npm.taobao.org
           yarn
           yarn docs:build
           cd dist
           git init
           git config user.name "schoolnote"
-          git config user.email "eve.mail@qq.com"
+          git config user.email "1595825578@qq.com"
           git add -A
-          git commit -m "Auto publish by Github Actions: $(date +"%Y年%m月%d日")"
+          git commit -m "$(date +"%Y/%m/%d") Github Actions auto published"
           mkdir -p ~/.ssh/
           echo "$ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
