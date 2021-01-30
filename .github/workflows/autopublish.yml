@@ -19,12 +19,10 @@ jobs:
         with:
          fetch-depth: 2 
 
-      # Runs a single command using the runners shell
       - uses: actions/setup-node@v2.1.4
         with:
           node-version: 15.x
 
-      # Runs a set of commands using the runners shell
       - name: Run!
         run: yarn && yarn build
         
