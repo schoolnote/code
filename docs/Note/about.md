@@ -61,7 +61,7 @@ QQ群：902766503
 
 微信群：
 
-![二维码](https://s3.ax1x.com/2021/01/26/sv9XLT.jpg)
+![](https://img.imgdb.cn/item/6014c6e03ffa7d37b3b623f9.jpg)
 
 :::
 
