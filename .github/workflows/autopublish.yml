@@ -1,39 +1,26 @@
-name: schoolnote auto publish
-
-on:
+name: vuepress-deploy
+on: 
   push:
-    branches: 
-     -main
-  pull_request:
-    branches: 
-     -main
-
+    branches:
+      - master
 jobs:
-  build:
-    runs-on: ubuntu-latest
-
-# steps表示将作为job一部分执行的一系列任务
+  build-and-deploy:
+    runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v2.3.4
+      - name: Checkout
+        uses: actions/checkout@v2.3.4
         with:
-         persist-credentials: false
-         fetch-depth: 0 
-
-      - uses: actions/setup-node@v2.1.4
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.1.4
         with:
           node-version: 15.x
-
-      - name: Run!
+      - name: build and deploy
+        env:
+          ACTION_DEPLOY_KEY: ${{ secrets.webs }}
         run: |
-         # yarn config set registry https://r.npm.taobao.org
-         yarn
-         #yarn run build
-         yarn docs:build
-        
-      - name: deploy 
-        uses: peaceiris/actions-gh-pages@v3 
-        with:
-          deploy_key: ${{ secrets.webs }} # key
-          external_repository: schoolnote.github.io #推送到该仓库中，地址格式为github名称/仓库名
-          publish_branch: main #分支名
-          publish_dir: docs/dist #要推送的内容（打包后的博客文件夹）
+          yarn config set registry https://r.npm.taobao.org
+          yarn
+          yarn build
+          
