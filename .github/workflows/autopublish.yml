@@ -1,0 +1,42 @@
+name: schoolnote auto publish
+
+on:
+
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+
+  workflow_dispatch:
+
+
+jobs:
+ 
+  build:
+ 
+    runs-on: ubuntu-latest
+
+# steps表示将作为job一部分执行的一系列任务
+    steps:
+
+      - uses: actions/checkout@main
+        with:
+         fetch-depth: 2 
+
+      # Runs a single command using the runners shell
+      - uses: actions/setup-node@v2.1.4
+        with:
+          node-version: 15.x
+
+      # Runs a set of commands using the runners shell
+      - name: Run!
+        run: yarn && yarn build
+        
+      - name: deploy 
+        uses: peaceiris/actions-gh-pages@v3 
+        with:
+          deploy_key: ${{ secrets.webs }} # key
+          external_repository: schoolnote.github.io #推送到该仓库中，地址格式为github名称/仓库名
+          publish_branch: main #分支名
+          publish_dir: docs/dist #要推送的内容（打包后的博客文件夹）
