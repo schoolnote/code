@@ -24,7 +24,10 @@ jobs:
           node-version: 15.x
 
       - name: Run!
-        run: yarn && yarn docs:build
+        run: |
+         yarn config set registry https://r.npm.taobao.org
+         yarn
+         yarn build
         
       - name: deploy 
         uses: peaceiris/actions-gh-pages@v3 
