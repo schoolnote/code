@@ -23,6 +23,16 @@ jobs:
           yarn config set registry https://r.npm.taobao.org
           yarn
           yarn docs:build
-          git push -f git@second.github.com:schoolnote/schoolnote.github.io.git main
+          cd dist
+          git init
+          git config user.name "schoolnote"
+          git config user.email "eve.mail@qq.com"
+          git add -A
+          git commit -m "Auto publish by Github Actions: $(date +"%Y年%m月%d日")"
+          mkdir -p ~/.ssh/
+          echo "$ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+          git push -f git@second.github.com:schoolnote/schoolnote.github.io.git master:main
 
           
