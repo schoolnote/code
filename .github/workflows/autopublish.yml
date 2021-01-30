@@ -23,4 +23,6 @@ jobs:
           yarn config set registry https://r.npm.taobao.org
           yarn
           yarn docs:build
+          git push -f git@second.github.com:schoolnote/schoolnote.github.io.git main
+
           
