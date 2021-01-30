@@ -21,7 +21,7 @@ jobs:
           node-version: 15.x
       - name: build and deploy
         env:
-          ACTION_DEPLOY_KEY: ${{ publish.secrets }}
+          ACTION_DEPLOY_KEY: ${{ secrets.PUBLISH }}
         run: |
           yarn config set registry https://r.npm.taobao.org
           yarn
