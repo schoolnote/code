@@ -14,9 +14,10 @@ jobs:
 
 # steps表示将作为job一部分执行的一系列任务
     steps:
-      - uses: actions/checkout@main
+      - uses: actions/checkout@v2.3.4
         with:
-         fetch-depth: 2 
+         persist-credentials: false
+         fetch-depth: 0 
 
       - uses: actions/setup-node@v2.1.4
         with:
