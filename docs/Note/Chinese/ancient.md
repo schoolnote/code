@@ -3,7 +3,7 @@ title: 乌有先生历险记
 categories:
  - 语文
 tags:
- - 文言文
+ - 古文
 author: '兰花'
 isShowComments: true
 ---

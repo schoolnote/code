@@ -10,16 +10,16 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: 1、Check
+      - name: Check
         uses: actions/checkout@v2.3.4
         with:
           persist-credentials: false
           fetch-depth: 0
-      - name: 2、Setup environment
+      - name: Setup environment
         uses: actions/setup-node@v2.1.4
         with:
           node-version: 15.x
-      - name: 3、building...(please wait) 
+      - name: building...(please wait) 
         env:
           ACTION_DEPLOY_KEY: ${{ secrets.PUBLISH }}
         run: |
