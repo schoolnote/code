@@ -23,7 +23,7 @@ jobs:
         env:
           ACTION_DEPLOY_KEY: ${{ secrets.PUBLISH }}
         run: |
-          #yarn config set registry https://r.npm.taobao.org
+          yarn config set registry https://r.npm.taobao.org
           yarn
           yarn docs:build
           cd dist
