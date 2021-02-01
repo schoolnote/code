@@ -37,5 +37,28 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan github.com >> ~/.ssh/known_hosts
           git push -f git@github.com:schoolnote/schoolnote.github.io.git master:main
+ sync:
+    needs: publish on gitee
+    runs-on: ubuntu-latest
+    steps:
+    - name: Sync to Gitee
+      uses: wearerequired/git-mirror-action@master
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.GITEE }}
+      with:
+        # 来源仓库
+        source-repo: "git@github.com:schoolnote/schoolnote.github.io.git"
+        # 目标仓库
+        destination-repo: "git@gitee.com:schoolnote/schoolnote.git"
+  reload-pages:
+    needs: sync
+    runs-on: ubuntu-latest
+    steps:
+      - name: reload gitee
+        uses: mizuka-wu/gitee-pages-action@v1.0.0
+        with:
+          repository: schoolnote/schoolnote
+          cookie: ${{ secrets.RELOAD }}
+          branch: main
 
           
