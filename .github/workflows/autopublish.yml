@@ -42,15 +42,15 @@ jobs:
      needs: jobs1
      runs-on: ubuntu-latest
      steps:
-       - name: Sync to Gitee
+       - name: to Gitee
          uses: wearerequired/git-mirror-action@master
          env:
            SSH_PRIVATE_KEY: ${{ secrets.GITEE }}
          with:
         # 来源仓库
-           source-repo: "git@github.com:schoolnote/schoolnote.github.io.git main"
+           source-repo: "https://github.com/schoolnote/schoolnote.github.io.git"
         # 目标仓库
-           destination-repo: "git@gitee.com:schoolnote/schoolnote.git master"
+           destination-repo: "git@gitee.com:schoolnote/schoolnote.git"
   jobs3:
       needs: jobs2
       runs-on: ubuntu-latest
@@ -61,5 +61,3 @@ jobs:
             repository: schoolnote/schoolnote
             cookie: ${{ secrets.RELOAD }}
             branch: master
-
-          
