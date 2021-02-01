@@ -7,7 +7,7 @@ on:
     branches: 
       - main
 jobs:
-  job1:
+  jobs1:
     runs-on: ubuntu-latest
     steps:
       - name: Check
@@ -39,6 +39,7 @@ jobs:
           git push -f git@github.com:schoolnote/schoolnote.github.io.git main
 
   jobs2:
+     needs: jobs1
      runs-on: ubuntu-latest
      steps:
        - name: Sync to Gitee
@@ -51,7 +52,7 @@ jobs:
         # 目标仓库
            destination-repo: "git@gitee.com:schoolnote/schoolnote.git"
   jobs3:
-      #needs: sync
+      needs: jobs2
       runs-on: ubuntu-latest
       steps:
         - name: reload
