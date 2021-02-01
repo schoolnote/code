@@ -50,15 +50,15 @@ sync:
         source-repo: "git@github.com:schoolnote/schoolnote.github.io.git"
         # 目标仓库
         destination-repo: "git@gitee.com:schoolnote/schoolnote.git"
-  reload-pages:
-    needs: sync
-    runs-on: ubuntu-latest
-    steps:
-      - name: reload gitee
-        uses: mizuka-wu/gitee-pages-action@v1.0.0
-        with:
-          repository: schoolnote/schoolnote
-          cookie: ${{ secrets.RELOAD }}
-          branch: main
+reload-pages:
+  needs: sync
+  runs-on: ubuntu-latest
+  steps:
+   - name: reload gitee
+     uses: mizuka-wu/gitee-pages-action@v1.0.0
+     with:
+        repository: schoolnote/schoolnote
+        cookie: ${{ secrets.RELOAD }}
+        branch: main
 
           
