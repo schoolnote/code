@@ -61,6 +61,6 @@ jobs:
           with:
             repository: schoolnote/schoolnote
             cookie: ${{ secrets.RELOAD }}
-            branch: main
+            branch: master
 
           
