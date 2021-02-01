@@ -37,8 +37,7 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan github.com >> ~/.ssh/known_hosts
           git push -f git@github.com:schoolnote/schoolnote.github.io.git master:main
-          cd ~/.ssh/
-          rm -rf *
+          
   jobs2:
      needs: jobs1
      runs-on: ubuntu-latest
@@ -49,9 +48,9 @@ jobs:
            SSH_PRIVATE_KEY: ${{ secrets.GITEE }}
          with:
         # 来源仓库
-           source-repo: "git@github.com:schoolnote/schoolnote.github.io.git"
+           source-repo: "git@github.com:schoolnote/schoolnote.github.io.git main"
         # 目标仓库
-           destination-repo: "git@gitee.com:schoolnote/schoolnote.git"
+           destination-repo: "git@gitee.com:schoolnote/schoolnote.git master"
   jobs3:
       needs: jobs2
       runs-on: ubuntu-latest
