@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check
-        uses: actions/checkout@v2.3.4
+        uses: actions/checkout@master
         with:
           persist-credentials: false
           fetch-depth: 0
@@ -38,29 +38,30 @@ jobs:
           ssh-keyscan github.com >> ~/.ssh/known_hosts
           git push -f git@github.com:schoolnote/schoolnote.github.io.git main
         
-sync:
-  needs: build-and-deploy
-  runs-on: ubuntu-latest
-  steps:
-  - name: Sync to Gitee
-    uses: wearerequired/git-mirror-action@master
-    env:
-      SSH_PRIVATE_KEY: ${{ secrets.GITEE }}
-    with:
+ 
+git-mirror:
+   needs: build-and-deploy
+   runs-on: ubuntu-latest
+   steps:
+   - name: Sync to Gitee
+     uses: wearerequired/git-mirror-action@master
+     env:
+       SSH_PRIVATE_KEY: ${{ secrets.GITEE }}
+     with:
         # 来源仓库
-      source-repo: "git@github.com:schoolnote/schoolnote.github.io.git"
+       source-repo: "git@github.com:schoolnote/schoolnote.github.io.git"
         # 目标仓库
-      destination-repo: "git@gitee.com:schoolnote/schoolnote.git"
+       destination-repo: "git@gitee.com:schoolnote/schoolnote.git"
       
 reload-pages:
-  needs: sync
-  runs-on: ubuntu-latest
-  steps:
-    - name: reload
-      uses: mizuka-wu/gitee-pages-action@v1.0.0
-      with:
-        repository: schoolnote/schoolnote
-        cookie: ${{ secrets.RELOAD }}
-        branch: main
+   needs: git-mirror
+   runs-on: ubuntu-latest
+   steps:
+     - name: reload
+       uses: mizuka-wu/gitee-pages-action@v1.0.0
+       with:
+         repository: schoolnote/schoolnote
+         cookie: ${{ secrets.RELOAD }}
+         branch: main
 
           
