@@ -39,7 +39,7 @@ jobs:
           git push -f git@github.com:schoolnote/schoolnote.github.io.git main
         
  
-git-mirror:
+ sync
    needs: build-and-deploy
    runs-on: ubuntu-latest
    steps:
