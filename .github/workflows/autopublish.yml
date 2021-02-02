@@ -31,7 +31,7 @@ jobs:
           git config user.name "schoolnote"
           git config user.email "1595825578@qq.com"
           git add -A
-          git commit -m "$(date +"%Y/%m/%d") Github Actions auto published"
+          git commit -m "$(date +"%Y/%m/%d 1%T") Github Actions auto published"
           mkdir -p ~/.ssh/
           echo "$ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
