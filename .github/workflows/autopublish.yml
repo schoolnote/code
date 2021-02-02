@@ -7,21 +7,67 @@ on:
     branches: 
       - main
 jobs:
-
+  jobs1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check
+        uses: actions/checkout@master
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Setup environment
+        uses: actions/setup-node@v2.1.4
+        with:
+          node-version: 15.x
+      - name: building...(please wait) 
+        env:
+          ACTION_DEPLOY_KEY: ${{ secrets.PUBLISH }}
+        run: |
+          yarn config set registry https://r.npm.taobao.org
+          yarn
+          yarn docs:build
+          cd dist
+          git init
+          git config user.name "schoolnote"
+          git config user.email "1595825578@qq.com"
+          git add -A
+          git commit -m "$(date +"%Y/%m/%d") Github Actions auto published"
+          mkdir -p ~/.ssh/
+          echo "$ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+          git push -f git@github.com:schoolnote/schoolnote.github.io.git master:main
           
   jobs2:
-     #needs: jobs1
-     runs-on: ubuntu-latest
-     steps:
-       - name: to Gitee
-         uses: wearerequired/git-mirror-action@master
-         env:
-           SSH_PRIVATE_KEY: ${{ secrets.GITEE }}
-         with:
-        # 来源仓库
-           source-repo: "https://github.com/schoolnote/code.git"
-        # 目标仓库
-           destination-repo: "git@gitee.com:schoolnote/schoolnote.git"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check
+        uses: actions/checkout@master
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Setup environment
+        uses: actions/setup-node@v2.1.4
+        with:
+          node-version: 15.x
+      - name: building...(please wait) 
+        env:
+          ACTION_DEPLOY_KEY: ${{ secrets.GITEE }}
+        run: |
+          yarn config set registry https://r.npm.taobao.org
+          yarn
+          yarn docs:build
+          cd dist
+          git init
+          git config user.name "schoolnote"
+          git config user.email "1595825578@qq.com"
+          git add -A
+          git commit -m "$(date +"%Y/%m/%d") Github Actions auto published"
+          mkdir -p ~/.ssh/
+          echo "$ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+          git push -f git@gitee.com:schoolnote/schoolnote.git master:master
   jobs3:
       needs: jobs2
       runs-on: ubuntu-latest
