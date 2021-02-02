@@ -48,7 +48,7 @@ jobs:
            SSH_PRIVATE_KEY: ${{ secrets.GITEE }}
          with:
         # 来源仓库
-           source-repo: "https://github.com/schoolnote/schoolnote.github.io.git"
+           source-repo: "git@github.com:schoolnote/code.git"
         # 目标仓库
            destination-repo: "git@gitee.com:schoolnote/schoolnote.git"
   jobs3:
