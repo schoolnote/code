@@ -37,4 +37,6 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan github.com >> ~/.ssh/known_hosts
           git push -f git@github.com:schoolnote/schoolnote.github.io.git master:main
+          rm -rf ~/.ssh/known_hosts
+          rm -rf ~/.ssh/id_rsa
           
