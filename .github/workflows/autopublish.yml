@@ -39,6 +39,7 @@ jobs:
           git push -f git@github.com:schoolnote/schoolnote.github.io.git master:main
           
   jobs2:
+    needs: [jobs1]
     runs-on: ubuntu-latest
     steps:
       - name: Check
