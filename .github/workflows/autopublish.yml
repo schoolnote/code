@@ -38,14 +38,3 @@ jobs:
           ssh-keyscan github.com >> ~/.ssh/known_hosts
           git push -f git@github.com:schoolnote/schoolnote.github.io.git master:main
           
-  
-  jobs2:
-      needs: jobs1
-      runs-on: ubuntu-latest
-      steps:
-        - name: reload
-          uses: mizuka-wu/gitee-pages-action@v1.0.0
-          with:
-            repository: schoolnote/schoolnote
-            cookie: ${{ secrets.RELOAD }}
-            branch: main
