@@ -1,6 +1,0 @@
-github actions 简易入门及自动部署博客实践 - 知乎
-https://zhuanlan.zhihu.com/p/93829286
-actions自动化：vuepress构建，github同步gitee，giteepage部署 - 知乎
-https://zhuanlan.zhihu.com/p/302530881
-https://github.com/schoolnote/code/actions
-Hm_lpvt_24f17767262929947cc3631f99bfd274=1612149675
