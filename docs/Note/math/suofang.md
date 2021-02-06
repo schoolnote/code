@@ -9,9 +9,9 @@ isShowComments: true
 ---
 
 
-a, 
 
-$e^{x} \geq x + 1$取等条件$x = 0$
+
+## $e^{x} \geq x + 1$取等条件$x = 0$
 
 『证明』构造$f(x) = \frac{x + 1}{e^{x}}$，$f'(x) = - \frac{x}{e^{x}}$.
 
@@ -22,8 +22,8 @@ $e^{x} \geq x + 1$.取等条件$x = 0$.
 
 
 
-b,
-$e^{x} \geq \frac{1}{2}x^{2} + x + 1(x \geq 0)$取等条件$x = 0$
+
+## $e^{x} \geq \frac{1}{2}x^{2} + x + 1(x \geq 0)$取等条件$x = 0$
 
 『证明』构造$f(x) = \frac{\frac{1}{2}x^{2} + x + 1}{e^{x}}$，$f'(x) = - \frac{\frac{1}{2}x^{2}}{e^{x}}$
 
@@ -33,9 +33,9 @@ $x > 0$时$f'(x) < 0 \Rightarrow f(x) \searrow$，$f(x) \leq {f(x)}_{\max} = f(0
 
 
 
-c, 
 
-$e^{x} \geq x^{2} + 1(x \geq 0)$取等条件$x = 0$
+
+## $e^{x} \geq x^{2} + 1(x \geq 0)$取等条件$x = 0$
 
 『证明』构造$f(x) = \frac{x^{2} + 1}{e^{x}}$，$f'(x) = \frac{2x - x^{2} - 1}{e^{x}} = - \frac{(x - 1)^{2}}{e^{x}}$
 
@@ -45,8 +45,8 @@ $x > 0$时$f'(x) < 0 \Rightarrow f(x) \searrow$，$f(x) \leq {f(x)}_{\max} = f(0
 
 
 
-d,
-$e^{x} \geq \text{ex} + (x - 1)^{2}(x \geq 0)$取等条件$x = 0$
+
+## $e^{x} \geq \text{ex} + (x - 1)^{2}(x \geq 0)$取等条件$x = 0$
 
 『证明』构造$f(x) = \frac{\text{ex} + (x - 1)^{2}}{e^{x}}$，$f'(x) = \frac{- x^{2} + (4 - e)x + e - 3}{e^{x}} = \frac{(x + e - 3)(x - 1)}{e^{x}}$
 
@@ -58,8 +58,8 @@ ${f(x)}_{\max} = f(0) = f(1) = 1$，即$\frac{\text{ex} + (x - 1)^{2}}{e^{x}} \l
 
 
 
-e,
-$x - \frac{1}{2}x^{2} \leq \ln(x + 1) \leq x(x \geq 0)$取等条件$x = 0$
+
+## $x - \frac{1}{2}x^{2} \leq \ln(x + 1) \leq x(x \geq 0)$取等条件$x = 0$
 
 『证明』i, $\ln(x + 1) \leq x$
 
@@ -75,9 +75,9 @@ $f'(x) = \frac{1}{x + 1} + x - 1 \geq 2\sqrt{\frac{1}{x + 1}(x + 1)} - 2 = 0$,$f
 
 即$f(x) \geq f(0) = 0 \Rightarrow x - \frac{1}{2}x^{2} \leq \ln(x + 1)$.
 
-f, 
 
-$\ln x \leq \frac{x}{e}(x > 0)$取等条件$x = e$
+
+## $\ln x \leq \frac{x}{e}(x > 0)$取等条件$x = e$
 
 『证明』构造$f(x) = \ln x - \frac{x}{e}$，$f'(x)$=$\frac{1}{x} - \frac{1}{e}$
 
@@ -87,9 +87,9 @@ $x > e$时，$f(x) \searrow$，$x < e$时，$f(x) \nearrow$，$f(x) \leq {f(x)}_
 
 
 
-g,
 
-$\ln x \leq x^{2} - x$，取等条件$x = 1$
+
+## $\ln x \leq x^{2} - x$，取等条件$x = 1$
 
 『证明』构造$f(x) = \ln x - x^{2} + x$，$f'(x) = \frac{1}{x} - 2x + 1$
 
@@ -99,9 +99,9 @@ $x > 1$时，$f(x) \searrow$，$x < 1$时，$f(x) \nearrow$，$f(x) \leq {f(x)}_
 
 
 
-h, 
 
-$\sin x \leq x(x \geq 0)$取等条件$x = 0$
+
+## $\sin x \leq x(x \geq 0)$取等条件$x = 0$
 
 『证明』构造$f(x) = \sin x - x$，$f'(x) = \cos x - 1$
 
