@@ -1333,6 +1333,13 @@
   dependencies:
     medium-zoom "^1.0.4"
 
+"@vuepress/plugin-medium-zoom@^1.8.0":
+  version "1.8.0"
+  resolved "https://registry.npm.taobao.org/@vuepress/plugin-medium-zoom/download/@vuepress/plugin-medium-zoom-1.8.0.tgz#e7bff4dd0af58929c16d3feaa8f47dfa6cedac34"
+  integrity sha1-57/03Qr1iSnBbT/qqPR9+mztrDQ=
+  dependencies:
+    medium-zoom "^1.0.4"
+
 "@vuepress/plugin-nprogress@1.8.0":
   version "1.8.0"
   resolved "https://registry.npm.taobao.org/@vuepress/plugin-nprogress/download/@vuepress/plugin-nprogress-1.8.0.tgz?cache=0&sync_timestamp=1611502480227&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40vuepress%2Fplugin-nprogress%2Fdownload%2F%40vuepress%2Fplugin-nprogress-1.8.0.tgz#8fd3d5415d4c8326ca569118e935b875e5fd7bb5"

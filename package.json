@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "@vuepress-yard/vuepress-plugin-window": "^1.0.10",
+    "@vuepress/plugin-medium-zoom": "^1.8.0",
     "valine": "^1.4.14",
     "vuepress": "^1.8.0",
     "vuepress-plugin-mathjax": "^1.2.8",
